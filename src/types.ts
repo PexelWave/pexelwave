@@ -4,3 +4,9 @@ export type CardType = {
     description: string;
     href: string
 }
+
+export type NavLink = {
+    icon?: React.ReactNode;
+    text: string;
+    href: string;
+}

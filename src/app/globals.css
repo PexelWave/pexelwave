@@ -21,19 +21,32 @@
 }
 
 @layer components {
+    .xl-title {
+        @apply text-[50px] md:text-6xl lg:text-9xl font-black leading-tight;
+    }
     .large-title {
-        @apply text-6xl md:text-8xl lg:text-9xl font-black leading-tight;
+        @apply text-[50px] md:text-6xl lg:text-8xl font-black leading-tight;
     }
 
     .medium-title {
-        @apply text-4xl font-semibold;
+        @apply text-2xl font-semibold shadow-purple shadow-lg;
     }
 
     .small-title {
-        @apply text-2xl font-semibold;
+        @apply text-xl font-semibold;
     }
 
     .btn {
         @apply inline-block px-6 py-4 rounded-lg my-6;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar {
+        @apply w-[2px];
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        @apply bg-light-foreground rounded-lg;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-lime rounded-lg;
     }
 }

@@ -16,31 +16,7 @@ const ServicesPage = async () => {
   // );
   return (
     <main className="text-light-foreground container flex flex-col gap-12">
-      <header className="container text-light-foreground flex flex-col-reverse  md:flex-row  items-center">
-        <div className="flex flex-col justify-center text-center md:text-left">
-          <span className="medium-title flex items-center justify-center md:justify-start">
-            LET&apos;S BRING YOUR
-            <HLine />
-          </span>
-          <h1 className="xl-title">
-            <span className="lg:font-outline-2">IDEAS</span> TO{" "}
-            <span>
-              LIFE
-              <span className="inline-block h-[20px] w-[20px] bg-lime animate-bounce rounded-full ml-2"></span>
-            </span>
-          </h1>
-        </div>
-        <div className="md:w-1/2">
-          <Lottie
-            className="hidden md:block w-[600px]"
-            animationData={headerAnimationData}
-          />
-          <p className="hidden md:block border-l-4 border-lime pl-2 text-xs max-w-[200px] float-right leading-loose">
-            We become an important extension to your business. Let us take care
-            of the techy stuff.
-          </p>
-        </div>
-      </header>
+      <ServicesHeader />
       {services.map((service) => (
         <div key={service._id} className="flex flex-col md:flex-row gap-6">
           <div className="md:w-1/2">
@@ -55,7 +31,7 @@ const ServicesPage = async () => {
                 </li>
               ))}
             </ul>
-            <Link className="btn bg-blue font-bold uppercase " href="/services">
+            <Link className="btn bg-blue font-bold uppercase " href={`/services/${service.slug}`}>
               GET QOUTE
             </Link>
           </div>
@@ -64,6 +40,36 @@ const ServicesPage = async () => {
     </main>
   );
 };
+
+export function ServicesHeader() {
+  return (
+    <header className="container text-light-foreground flex flex-col-reverse  md:flex-row  items-center">
+      <div className="flex flex-col justify-center text-center md:text-left">
+        <span className="medium-title flex items-center justify-center md:justify-start">
+          LET&apos;S BRING YOUR
+          <HLine />
+        </span>
+        <h1 className="xl-title">
+          <span className="lg:font-outline-2">IDEAS</span> TO{" "}
+          <span>
+            LIFE
+            <span className="inline-block h-[20px] w-[20px] bg-lime animate-bounce rounded-full ml-2"></span>
+          </span>
+        </h1>
+      </div>
+      <div className="md:w-1/2">
+        <Lottie
+          className="hidden md:block w-[600px]"
+          animationData={headerAnimationData}
+        />
+        <p className="hidden md:block border-l-4 border-lime pl-2 text-xs max-w-[200px] float-right leading-loose">
+          We become an important extension to your business. Let us take care of
+          the techy stuff.
+        </p>
+      </div>
+    </header>
+  );
+}
 
 // <main>
 //   <section className="text-light-foreground mt-12">

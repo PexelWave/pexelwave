@@ -45,7 +45,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2 mt-6 md:mt-0 container md:w-1/2">
-          <Image className="w-[50%]" src={projectInView.icon!} alt={`${projectInView.title}-icon`} width={400} height={40}/>
+          {projectInView.icon ? <Image className="w-[50%]" src={projectInView.icon!} alt={`${projectInView.title}-icon`} width={400} height={40}/> : projectInView.title}
           <h3 className="medium-title my-2">{projectInView.title}</h3>
           <p>{projectInView.description}</p>
           <div className="flex gap-2 mt-4">
@@ -54,12 +54,12 @@ const Projects = () => {
             ))}
           </div>
           <div className="flex gap-6 mt-6">
-            <Link
+            {/* <Link
               className="btn text-center inline-block bg-lime rounded-lg font-bold"
               href={projectInView.href}
             >
               Case Study
-            </Link>
+            </Link> */}
             <Link
               className="btn text-center inline-block bg-blue rounded-lg font-bold"
               href={projectInView.href}

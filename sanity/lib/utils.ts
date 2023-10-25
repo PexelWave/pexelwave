@@ -53,3 +53,20 @@ export async function getServices() {
     }`
   )
 }
+
+export async function getService(slug: string) {
+  try {
+    const query = groq`
+      *[_type == "service" && slug.current == $slug][0]{
+        _id,
+      title,
+      "slug": slug.current,
+      description,
+      serviceFeatures
+      }`;
+
+    return client.fetch(query, { slug });
+  } catch (error) {
+    throw new Error(`Failed to fetch service data`);
+  }
+}

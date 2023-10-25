@@ -14,23 +14,24 @@ const BlogPost = async ({ params }: { params: { slug: string } }) => {
           width={1080}
           height={420}
         />
-        <div className="my-6 flex items-center gap-6">
+        <div className="my-6 flex items-center gap-6 max-w-5xl mx-auto">
           <Image
-            className="rounded-full w-[40px] h-[40px]"
+            className="rounded-full w-[40px] h-[40px] md:w-20 md:h-20"
             src={post.author.image}
             alt={post.author.image}
             width={30}
             height={20}
+            unoptimized
           />
-          <div className="">
+          <div>
+              <h4>{post.author.name}</h4>
             <p>
-              {post.author.name} <br />
-              {post.publishedAt}
+              {new Date(post.publishedAt).toDateString()}
             </p>
           </div>
         </div>
       </header>
-      <section style={{ color: 'white' }} className="text-white">
+      <section style={{ color: 'white' }} className="text-white max-w-5xl mx-auto">
         <PortableText value={post.body}/>
       </section>
     </main>

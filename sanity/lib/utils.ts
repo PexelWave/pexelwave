@@ -41,3 +41,15 @@ export async function getPost(slug: string): Promise<BlogPost> {
       throw new Error(`Failed to fetch blog post`);
     }
   }
+
+export async function getServices() {
+  return client.fetch(
+    groq`*[_type == "service"]{
+      _id,
+      title,
+      "slug": slug.current,
+      description,
+      serviceFeatures
+    }`
+  )
+}

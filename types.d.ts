@@ -7,7 +7,7 @@ type CardType = {
 
 
 type Service = {
-    id: number;
+    _id: string;
     title: string;
     description: string;
     category: string;

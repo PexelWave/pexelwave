@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="container">
+    <section className="md:mt-24 container">
       <h2 className="large-title text-light-foreground">
         <span className="lg:font-outline-2">OUR</span> SERVICES
       </h2>

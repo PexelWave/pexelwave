@@ -37,7 +37,7 @@
     
       /* Responsive Paragraph Styles */
       p {
-        @apply text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mt-2 mb-4;
+        @apply text-sm md:text-[16px] leading-relaxed mt-2 mb-4;
       }
 
     section {

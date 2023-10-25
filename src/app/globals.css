@@ -11,25 +11,67 @@
         --light-foreground: #E3E8EA;
     }
 
+    h1 {
+        @apply text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight mt-4 mb-6;
+      }
+    
+      h2 {
+        @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight mt-4 mb-5;
+      }
+    
+      h3 {
+        @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold leading-tight mt-3 mb-4;
+      }
+    
+      h4 {
+        @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold leading-tight mt-3 mb-4;
+      }
+    
+      h5 {
+        @apply text-lg md:text-xl lg:text-2xl xl:text-3xl font-semibold leading-tight mt-2 mb-3;
+      }
+    
+      h6 {
+        @apply text-base md:text-lg lg:text-xl xl:text-2xl font-semibold leading-tight mt-2 mb-3;
+      }
+    
+      /* Responsive Paragraph Styles */
+      p {
+        @apply text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mt-2 mb-4;
+      }
+
     section {
         @apply py-12
+    }
+
+    main {
+        @apply pt-[15vh];
     }
 
     .container {
         @apply max-w-5xl mx-auto px-6;
     }
+
+    .font-outline-2 {
+        -webkit-text-stroke: 1px var(--light-foreground);
+        color: transparent
+    }
+
+    .font-outlime-lime {
+        -webkit-text-stroke-color: var(--lime);
+    }
 }
 
 @layer components {
     .xl-title {
-        @apply text-[50px] md:text-6xl lg:text-9xl font-black leading-tight;
+        @apply text-6xl lg:text-9xl font-black leading-tight;
     }
     .large-title {
         @apply text-[50px] md:text-6xl lg:text-8xl font-black leading-tight;
     }
 
     .medium-title {
-        @apply text-2xl font-semibold shadow-purple shadow-lg;
+        @apply text-2xl font-semibold shadow-purple;
     }
 
     .small-title {
@@ -37,16 +79,25 @@
     }
 
     .btn {
-        @apply inline-block px-6 py-4 rounded-lg my-6;
+        @apply inline-block px-6 py-4 rounded-lg my-6 text-center;
     }
 
+    .btn-blue {
+        @apply bg-blue text-light-foreground;
+    }
+
+    /* Custom scrollbar */
     .custom-scrollbar::-webkit-scrollbar {
-        @apply w-[2px];
+        @apply h-2;
     }
     .custom-scrollbar::-webkit-scrollbar-track {
         @apply bg-light-foreground rounded-lg;
     }
     .custom-scrollbar::-webkit-scrollbar-thumb {
-        @apply bg-lime rounded-lg;
+        @apply bg-blue rounded-lg;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        @apply bg-lime cursor-pointer;
     }
 }

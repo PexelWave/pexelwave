@@ -1,24 +1,18 @@
-import { NavLink } from "@/types";
-
-export const navLinks: NavLink[] = [
+export const navLinks = [
     {
         text: 'Services',
         href: '/services' 
     },
     {
         text: 'Portfolio',
-        href: '/portfolio' 
+        href: '/#projects' 
     },
     {
         text: 'Blog',
         href: '/blog' 
     },
     {
-        text: 'About',
-        href: '/about' 
-    },
-    {
         text: 'Contact',
-        href: '/contact' 
+        href: '/#contact' 
     },
-]
+] as const;

@@ -1,21 +1,32 @@
-import { servicesInfo } from '@/utils/components-data'
-import Link from 'next/link'
-import React from 'react'
+import { servicesInfo } from "@/lib/components-data";
+import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="container">
-        <div className='overflow-x-scroll custom-scrollbar flex gap-6 snap-x snap-mandatory pb-2'>
-        { servicesInfo.map(service => (
-            <div key={service.title} className='bg-violet-900 rounded-lg p-6 snap-center w-full md:w-1/3  shrink-0 grid grid-rows-3 text-light-foreground'>
-                <h3 className="medium-title">{service.title}</h3>
-                <p>{service.description}</p>
-                <Link className="btn bg-blue flex items-center justify-center text-2xl font-bold" href={service.href}>Hire Us</Link>
-            </div>
-        ))}
-        </div>
-    </section>
-  )
-}
+    <section className="container pt-[300px] md:pt-0 mt-24">
+      <h2 className="large-title text-light-foreground">
+        <span className="font-outline-2">OUR</span> SERVICES
+      </h2>
 
-export default Services
+      <div className="mt-6 overflow-x-scroll custom-scrollbar flex gap-6 snap-x snap-mandatory">
+        {servicesInfo.map((service) => (
+          <div
+            key={service.title}
+            className="bg-violet-900 mb-6 rounded-lg p-6 snap-center w-full md:w-1/3 shrink-0 text-light-foreground flex flex-col justify-between"
+          >
+            <h3 className="medium-title">{service.title}</h3>
+            <p className="mt-4">{service.description}</p>
+            <Link
+              className="btn bg-blue text-center flex items-center justify-center text-2xl font-bold uppercase"
+              href="/services"
+            >
+              get qoute
+            </Link>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Services;

@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width=".19" height=".36"
+  viewBox="0 0 56.19 52.36">
+  <g id="Group_6" data-name="Group 6">
+    <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline"
+      d="M17.03,7.36V0h-.2C7.54,0,0,8.16,0,18.24A18.743,18.743,0,0,0,7.21,33.22v5.9a2.53,2.53,0,0,0,2.41,2.61h7.41V36.82H12.12V31.18l-2.01-1.47A12.586,12.586,0,0,1,7.14,12.64a11.634,11.634,0,0,1,9.89-5.27ZM9.67,47.45V49.9a2.563,2.563,0,0,0,2.66,2.45h5.53V47.44H9.68Z"
+      fill="#fb008e" />
+    <rect id="Rectangle_10" data-name="Rectangle 10" width="3.27" height="52.36" transform="translate(16.21)"
+      fill="#fb008e" />
+    <path id="Path_72" data-name="Path 72" d="M25.21,52.36H21.94V0h3.27V22.76L44.22,0h4.15L25.21,27.59Z"
+      fill="#6528f7" />
+    <path id="Path_73" data-name="Path 73"
+      d="M56.12,52.36H52.06L32.45,28.71l-1.84,2.26L48.27,52.36H44.21L26.42,30.91,52.06,0h4.13L34.51,26.18Z"
+      fill="#fb008e" />
+  </g>
+</svg>

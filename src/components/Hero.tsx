@@ -33,7 +33,7 @@ const Hero = () => (
       <Image
         unoptimized={true}
         className="absolute block -top-40 md:hidden left-1/2 -translate-x-1/2 w-[1280px] max-w-[1280px]"
-        src="/heroAnimation.svg"
+        src="/HeroAnimation.svg"
         alt="hero illustration"
         width={1600}
         height={1200}

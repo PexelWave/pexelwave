@@ -28,7 +28,7 @@ const ServicesPage = () => {
           </h1>
         </div>
         <div className="md:w-1/2">
-          <Lottie className="w-[500px]" animationData={headerAnimationData} />
+          <Lottie className="hidden md:block w-[600px]" animationData={headerAnimationData} />
           <p className="hidden md:block border-l-4 border-lime pl-2 text-xs max-w-[200px] float-right leading-loose">
             We become an important extension to your business. Let us take care
             of the techy stuff.
@@ -37,7 +37,7 @@ const ServicesPage = () => {
       </header>
 
       <section className="text-light-foreground mt-12">
-        <div className="z-10 bg-violet-950 backdrop-blur-lg sticky top-[10vh] flex font-medium text-sm text-light-foreground overflow-x-scroll custom-scrollbar gap-6 snap-x snap-mandatory p-2">
+        <div className="z-10 bg-violet-950 backdrop-blur-lg sticky top-[10vh] flex font-medium text-sm text-light-foreground overflow-x-scroll custom-scrollbar gap-6 snap-x snap-mandatory p-2 w-full">
           {servicesInfo.map(({ title, id }) => (
             <button
               key={id}
@@ -57,7 +57,7 @@ const ServicesPage = () => {
         <div className="container flex flex-col md:flex-row gap-6 py-6 rounded-lg">
           <div className="md:w-1/2 flex flex-col gap-6">
             <div className="">
-              <Lottie className="w-[375px]" animationData={animation} />
+              <Lottie className="" animationData={animation} />
               <h3 className="medium-title md:text-5xl uppercase">
                 {showActiveService.title}
               </h3>

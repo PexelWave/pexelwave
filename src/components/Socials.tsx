@@ -7,13 +7,13 @@ type Props = {};
 const Socials = (props: Props) => {
   return (
     <>
-      <Link href="#">
+      <Link href="https://web.facebook.com/profile.php?id=100093666981234">
         <FaFacebook />
       </Link>
-      <Link href="#">
+      <Link href="https://web.facebook.com/profile.php?id=100093666981234">
         <FaInstagram />
       </Link>
-      <Link href="#">
+      <Link href="https://www.tiktok.com/@pexel.wave">
         <FaTiktok />
       </Link>
     </>

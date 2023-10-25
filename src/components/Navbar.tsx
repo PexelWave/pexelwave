@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
         <Logo />
         <AiOutlineClose onClick={handleClick} />
       </div>
-      {navLinks.map(({ icon, text, href }, index) => (
+      {navLinks.map(({ text, href }, index) => (
         <motion.li
           key={text}
           whileHover={{ scale: 1.3, color: "#1AB1F9", fontWeight: 'bold' }}
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           className="text-2xl"
         >
           <Link href={href} onClick={handleClick}>
-            {icon ? icon : null}
+            
             {text}
           </Link>
         </motion.li>
@@ -42,14 +42,13 @@ const Navbar: React.FC = () => {
 
   const DesktopNav: React.FC = () => (
     <ul className="hidden md:flex items-center gap-6">
-      {navLinks.map(({ icon, text, href }) => (
+      {navLinks.map(({ text, href }) => (
         <motion.li
         whileHover={{ scale: 1.1, color: "#1AB1F9", fontWeight: 'bold' }}
         transition={{ type: "spring", stiffness: 500 }}
           key={text}
         >
           <Link href={href}>
-            {icon ? icon : null}
             {text}
           </Link>
         </motion.li>

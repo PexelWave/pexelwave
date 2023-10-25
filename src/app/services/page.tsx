@@ -5,6 +5,7 @@ import headerAnimationData from "@/assets/lottie/animation_lng47ro3.json";
 import animation from "@/assets/lottie/devicesAnimationData.json";
 import Link from "next/link";
 import { servicesInfo } from "@/lib/components-data";
+import HLine from "@/components/HLine";
 
 const ServicesPage = () => {
   const [activeCategory, setActiveCategory] = React.useState(0);
@@ -17,7 +18,7 @@ const ServicesPage = () => {
         <div className="flex flex-col justify-center text-center md:text-left">
           <span className="medium-title flex items-center justify-center md:justify-start">
             LET&apos;S BRING YOUR
-            <div className="h-[2px] w-[50px] md:w-[200px] bg-blue rounded-full animate-bounce"></div>
+            <HLine />
           </span>
           <h1 className="xl-title">
             <span className="lg:font-outline-2">IDEAS</span> TO{" "}

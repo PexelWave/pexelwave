@@ -13,7 +13,7 @@ const Hero = () => (
         <br />
         <span className="lg:font-outline-2">EXCELLENCE</span>
       </h1>
-      <p className="text-base mt-6">
+      <p className="hidden md:block text-base mt-6">
         Creating Stunning Website and Innovative Solutions
       </p>
       <Link
@@ -30,8 +30,8 @@ const Hero = () => (
         className="hidden md:block md:absolute w-[1080px] top-0 left-1/2 -translate-x-1/2 md:left-0 md:-translate-x-0 lg:translate-x-1/2"
         animationData={heroAimation}
       />
-      <Image
-        className="absolute block -top-80 md:hidden left-1/2 -translate-x-1/2 w-[1280px] max-w-[1280px]"
+      <img
+        className="absolute block -top-40 md:hidden left-1/2 -translate-x-1/2 w-[1280px] max-w-[1280px]"
         src="/heroAnimation.svg"
         alt="hero illustration"
         width={1600}

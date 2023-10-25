@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
     >
       <div className="flex self-start items-center justify-between h-[10vh] w-full">
         <Logo />
-        <AiOutlineClose onClick={handleClick} />
+        <AiOutlineClose onClick={handleClick} size={30} />
       </div>
       {navLinks.map(({ text, href }, index) => (
         <motion.li
@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
       <div className="container flex items-center justify-between gap-6">
         {!open && <Logo />}
         {open && <MobileNav />}
-        {!open && <CiMenuFries className="md:hidden" onClick={handleClick} />}
+        {!open && <CiMenuFries className="md:hidden" onClick={handleClick} size={30} />}
         <DesktopNav />
       </div>
     </nav>

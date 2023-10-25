@@ -57,6 +57,11 @@
         color: transparent
     }
 
+    .no-outline {
+        -webkit-text-stroke: none;
+        color: unset;
+    }
+
     .font-outlime-lime {
         -webkit-text-stroke-color: var(--lime);
     }

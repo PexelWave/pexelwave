@@ -27,7 +27,7 @@ const Projects = () => {
     <section className="text-light-foreground md:mt-24" id="projects">
       <div className="container">
         <h2 className="large-title">
-          <span className="font-outline-2">RECENT</span> PROJECTS
+          <span className="lg:font-outline-2">RECENT</span> PROJECTS
         </h2>
       </div>
 

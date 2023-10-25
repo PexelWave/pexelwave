@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="container pt-[300px] md:pt-0 mt-24">
       <h2 className="large-title text-light-foreground">
-        <span className="font-outline-2">OUR</span> SERVICES
+        <span className="lg:font-outline-2">OUR</span> SERVICES
       </h2>
 
       <div className="mt-6 overflow-x-scroll custom-scrollbar flex gap-6 snap-x snap-mandatory">

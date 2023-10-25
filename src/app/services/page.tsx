@@ -14,21 +14,21 @@ const ServicesPage = () => {
   return (
     <main>
       <header className="container text-light-foreground flex flex-col-reverse  md:flex-row  items-center">
-        <div className="flex flex-col">
-          <span className="medium-title h-fit flex items-center">
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <span className="medium-title flex items-center justify-center md:justify-start">
             LET&apos;S BRING YOUR
-            <div className="h-[2px] w-[50px] md:w-[200px] bg-lime"></div>
+            <div className="h-[2px] w-[50px] md:w-[200px] bg-blue rounded-full animate-bounce"></div>
           </span>
           <h1 className="xl-title">
-            <span className="font-outline-2">IDEAS</span> TO{" "}
+            <span className="lg:font-outline-2">IDEAS</span> TO{" "}
             <span>
               LIFE
-              <span className="inline-block h-[20px] w-[20px] bg-lime"></span>
+              <span className="inline-block h-[20px] w-[20px] bg-lime animate-bounce rounded-full ml-2"></span>
             </span>
           </h1>
         </div>
         <div className="md:w-1/2">
-          <Lottie animationData={headerAnimationData} />
+          <Lottie className="w-[500px]" animationData={headerAnimationData} />
           <p className="hidden md:block border-l-4 border-lime pl-2 text-xs max-w-[200px] float-right leading-loose">
             We become an important extension to your business. Let us take care
             of the techy stuff.

@@ -7,11 +7,11 @@ const About = (props: Props) => {
     <section className="container text-light-foreground relative z-10 top-[450px] md:top-0 mb-[150px] md:mb-0">
       <h4 className="small-title">Our main focus is to</h4>
       <h2 className="large-title">
-        <span className="font-outline-2">HELP</span>
+        <span className="lg:font-outline-2">HELP</span>
         <br />
         BUSINESSES
       </h2>
-      <div className="flex flex-col md:flex-row items-center gap-6">
+      <div className="flex flex-col md:flex-row md:items-center gap-6">
         <div className="">
           <h3 className="medium-title">IMPROVE</h3>
           <p className="">Their brand and online presence</p>

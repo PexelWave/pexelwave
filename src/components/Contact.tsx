@@ -14,7 +14,7 @@ const Contact = (props: Props) => {
   return (
     <section className="bg-violet-950 md:mt-12" id="contact">
       <div className="container flex flex-col md:flex-row gap-12">
-        <div className="flex md:block md:w-1/3 ">
+        <div className="flex flex-col-reverse md:flex-row md:block md:w-1/3 ">
           <div className="flex flex-col">
             <h2 className="large-title text-light-foreground">
               <span className="font-outline-2">GET IN </span>
@@ -91,7 +91,7 @@ const Contact = (props: Props) => {
             />
           </div>
 
-          <button className="btn bg-blue text-light-foreground font-bold">
+          <button className="btn bg-blue text-light-foreground font-bold w-1/2">
             SEND
           </button>
         </form>

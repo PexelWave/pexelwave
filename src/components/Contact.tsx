@@ -6,6 +6,7 @@ import appDevAnimation from "@/assets/lottie/app-dev-animation.json";
 import Link from "next/link";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import Socials from "./Socials";
+import { sendEmail } from "@/actions/sendEmail";
 
 type Props = {};
 
@@ -39,8 +40,10 @@ const Contact = (props: Props) => {
         </div>
 
         <form
-          action=""
           className="flex-1 text-light-foreground md:px-24 rounded-lg"
+          action={async (formData) => {
+            await sendEmail(formData)
+          }}
         >
           <div className="flex flex-col gap-2 mb-6">
             <label htmlFor="name">
@@ -49,7 +52,7 @@ const Contact = (props: Props) => {
             <input
               className="h-[40px] rounded-lg text-violet-950 px-4 border-none outline-none"
               type="text"
-              name="name"
+              name="fullname"
               id="name"
               required
             />

@@ -30,7 +30,8 @@ const Hero = () => (
         className="hidden md:block md:absolute w-[1080px] top-0 left-1/2 -translate-x-1/2 md:left-0 md:-translate-x-0 lg:translate-x-1/2"
         animationData={heroAimation}
       />
-      <img
+      <Image
+        unoptimized={true}
         className="absolute block -top-40 md:hidden left-1/2 -translate-x-1/2 w-[1280px] max-w-[1280px]"
         src="/heroAnimation.svg"
         alt="hero illustration"

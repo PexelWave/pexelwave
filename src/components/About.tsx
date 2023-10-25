@@ -4,7 +4,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="container text-light-foreground relative z-10 md:mb-0 mt-96">
+    <section className="container text-light-foreground relative z-10 md:mb-0 mt-96 md:mt-0">
       <h4 className="small-title">Our main focus is to</h4>
       <h2 className="large-title">
         <span className="lg:font-outline-2">HELP</span>
